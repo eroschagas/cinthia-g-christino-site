@@ -13,7 +13,7 @@ export const Menu = () => {
         <a href="#section2">
           <h2>Interpretação</h2>
         </a>
-        <a href="#">
+        <a href="#section3">
           <h2>Tradução</h2>
         </a>
         <a href="#">

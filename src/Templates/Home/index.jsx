@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Live } from "../../Components/svg/Live";
 import Library from "../../img/Library.jpg";
+import AOS from "aos";
 
 export const Home = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <section id="home">
       <div className="home-spacing"></div>
