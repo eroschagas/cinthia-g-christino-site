@@ -1,3 +1,5 @@
+import { Footer } from "../../Components/Footer";
+
 export const Contact = () => {
   return (
     <section id="contact">
@@ -13,6 +15,7 @@ export const Contact = () => {
           officia at vero incidunt.
         </p>
       </div>
+      <Footer />
     </section>
   );
 };

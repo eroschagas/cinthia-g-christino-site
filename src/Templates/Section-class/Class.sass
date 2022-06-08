@@ -1,12 +1,13 @@
 #class
     width: 100%
+    min-height: calc( 100vh - 75px )
 .class-title
+    margin: 30px 0 60px 0
     display: block
     text-align: center
     font-size: 30px
-    margin: 30px
 .class-box
-    margin: 20px
+    margin: 20px 20px 0 20px
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(320px, auto))
 .class-text
@@ -38,3 +39,7 @@
     height: 95%
     z-index: -1
     border-radius: 40px
+
+@media (max-width: 680px)
+    .class-title
+        margin: 10px 0 60px 0
