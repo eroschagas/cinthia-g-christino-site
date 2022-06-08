@@ -81,17 +81,17 @@ html {
   width: 50vw;
   min-width: 350px;
   height: 200px;
-  background-color: rgba(255, 255, 255, 0.7333333333);
+  background-color: rgba(255, 255, 255, 0.4862745098);
+  border-radius: 20px;
+  border: double #006D77;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: double #006D77;
-  border-radius: 20px;
+  transform: translate(-50%, -50%);
 }
 
 .home-banner-text {
@@ -325,6 +325,9 @@ html {
   align-self: center;
   max-width: 600px;
   margin: 0 0 50px 0;
+  background-color: rgba(255, 255, 255, 0.4862745098);
+  border-radius: 20px;
+  padding: 10px;
 }
 .contact-info h1 {
   margin: 10px;
