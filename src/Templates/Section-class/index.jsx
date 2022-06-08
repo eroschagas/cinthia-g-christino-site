@@ -1,19 +1,20 @@
-import { Work } from "../../Components/svg/Work";
+import { Call } from "../../Components/svg/Call";
 
-export const Section2 = () => {
+export const Class = () => {
   return (
-    <section id="section2">
-      <h1 className="section2-title">Interpretação</h1>
-      <div className="section2-interpretation">
-        <div className="section2-img">
-          <Work />
+    <section id="class">
+      <div className="general-spacing"></div>
+      <h1 className="class-title">Aulas</h1>
+      <div className="class-box">
+        <div className="class-img">
+          <Call />
           <div
             data-aos="zoom-in-up"
             data-aos-delay="300"
-            className="section2-img-bg"
+            className="class-img-bg"
           ></div>
         </div>
-        <div className="section2-text">
+        <div className="class-text">
           <div data-aos="fade-up" data-aos-delay="400">
             <h1>Title</h1>
             <p>

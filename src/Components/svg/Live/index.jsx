@@ -5,7 +5,7 @@ export function Live() {
     <svg
       className="live"
       xmlns="http://www.w3.org/2000/svg"
-      width="748.756"
+      width="949"
       height="544"
       data-name="Layer 1"
       version="1.1"
@@ -30,7 +30,7 @@ export function Live() {
         transform="translate(-225.622 -178)"
       ></path>
       <path
-        fill="#6c63ff"
+        fill="#83C5BE"
         d="M562.796 446.295H347.522a3.99 3.99 0 01-3.986-3.987v-94.473a3.99 3.99 0 013.986-3.986h215.274a3.99 3.99 0 013.986 3.986v94.473a3.99 3.99 0 01-3.986 3.987z"
         data-name="Path 154"
         transform="translate(-225.622 -178)"

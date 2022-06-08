@@ -10,16 +10,16 @@ export const Menu = () => {
         <a href="#home">
           <h2>Inicio</h2>
         </a>
-        <a href="#section2">
+        <a href="#interpretation">
           <h2>Interpretação</h2>
         </a>
-        <a href="#section3">
+        <a href="#translation">
           <h2>Tradução</h2>
         </a>
-        <a href="#">
+        <a href="#class">
           <h2>Aulas</h2>
         </a>
-        <a href="#">
+        <a href="#contact">
           <h2>Contato</h2>
         </a>
       </nav>

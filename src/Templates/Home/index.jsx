@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Live } from "../../Components/svg/Live";
-import Library from "../../img/Library.jpg";
+import Earth from "../../img/Earth.jpg";
 import AOS from "aos";
 
 export const Home = () => {
@@ -9,11 +9,11 @@ export const Home = () => {
   }, []);
   return (
     <section id="home">
-      <div className="home-spacing"></div>
+      <div className="general-spacing"></div>
       <div className="home-banner">
         <div
           className="home-background"
-          style={{ backgroundImage: `url(${Library})` }}
+          style={{ backgroundImage: `url(${Earth})` }}
         ></div>
         <div className="home-banner-box">
           <h1 className="home-banner-text">

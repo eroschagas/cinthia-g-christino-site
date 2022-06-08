@@ -41,6 +41,23 @@
         transform: rotate(0deg)
     100%
         transform: rotate(0deg)
+@keyframes head3
+    0%
+        transform: rotate(0deg)
+    20%
+        transform: rotate(0deg)
+    23%
+        transform: rotate(10deg)
+    26%
+        transform: rotate(0deg)
+    60%
+        transform: rotate(0deg)
+    63%
+        transform: rotate(10deg)
+    66%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(0deg)
 @keyframes lines
     0%
         transform: translate(-225.62197px, -178px) scaleX(1)
@@ -54,6 +71,142 @@
         transform: translate(-225.62197px, -178px) scaleX(0.5)
     100%
         transform: translate(-225.62197px, -178px) scaleX(1)
+@keyframes headwork1
+    0%
+        transform: rotate(0)
+    6%
+        transform: rotate(0)
+    8%
+        transform: rotate(10deg)
+    10%
+        transform: rotate(0)
+    12%
+        transform: rotate(10deg)
+    14%
+        transform: rotate(0)
+    86%
+        transform: rotate(0)
+@keyframes headwork2
+    18%
+        transform: rotate(0)
+    20%
+        transform: rotate(10deg)
+    22%
+        transform: rotate(0)
+    24%
+        transform: rotate(10deg)
+    26%
+        transform: rotate(0)
+    66%
+        transform: rotate(0)
+    68%
+        transform: rotate(10deg)
+    70%
+        transform: rotate(0)
+    72%
+        transform: rotate(10deg)
+    74%
+        transform: rotate(0)
+@keyframes headwork3
+    54%
+        transform: rotate(0)
+    56%
+        transform: rotate(-10deg)
+    58%
+        transform: rotate(0)
+    60%
+        transform: rotate(-10deg)
+    62%
+        transform: rotate(0)
+@keyframes cardwork1
+    0%
+        fill: $cw
+    10%
+        fill: $cw
+    16%
+        fill: $c2
+    84%
+        fill: $c2
+    90%
+        fill: $cw
+@keyframes cardwork2
+    0%
+        fill: $cw
+    22%
+        fill: $cw
+    28%
+        fill: $c2
+    70%
+        fill: $c2
+    76%
+        fill: $cw
+@keyframes cardwork3
+    0%
+        fill: $cw
+    34%
+        fill: $cw
+    40%
+        fill: $c2
+    58%
+        fill: $c2
+    64%
+        fill: $cw
+
+@keyframes convertline
+    0%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+    20%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+    24%
+        transform: translate(-284.259px, -153.03px) rotateX(90deg)
+        fill: #6c63ff
+    26%
+        transform: translate(-284.259px, -153.03px) rotateX(90deg)
+        fill: $c2
+    30%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+    70%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+    74%
+        transform: translate(-284.259px, -153.03px) rotateX(90deg)
+        fill: $c2
+    76%
+        transform: translate(-284.259px, -153.03px) rotateX(90deg)
+        fill: #6c63ff
+    80%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+    100%
+        transform: translate(-284.259px, -153.03px) rotateX(0)
+@keyframes callheadmain
+    0%
+        transform: rotate(0deg)
+    20%
+        transform: rotate(0deg)
+    35%
+        transform: rotate(10deg)
+    50%
+        transform: rotate(0deg)
+    65%
+        transform: rotate(-10deg)
+    80%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(0deg)
+@keyframes callhead
+    0%
+        transform: translate(0, 0)
+    20%
+        transform: translate(0, 0)
+    35%
+        transform: translate(0, 3px)
+    50%
+        transform: translate(0, 0)
+    65%
+        transform: translate(0, 3px)
+    80%
+        transform: translate(0, 0)
+    100%
+        transform: translate(0, 0)
 
 .logo-animation
     animation: rotate 10s infinite linear
@@ -63,7 +216,7 @@
     overflow: visible
     height: 50px
     width: 60px
-.live, .work
+.live, .work, .convert, .call
     padding: 20px
     min-width: 320px
     max-width: 700px
@@ -94,4 +247,67 @@
 .live-line4
     animation: lines 6s infinite linear
     transform-origin: left
+    transform-box: fill-box
+.head-work1
+    animation: headwork1 10s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.head-work2
+    animation: headwork2 10s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.head-work3
+    animation: headwork3 10s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.card-work1
+    animation: cardwork1 10s infinite linear
+.card-work2
+    animation: cardwork2 10s infinite linear
+.card-work3
+    animation: cardwork3 10s infinite linear
+.convert-head1
+    animation: head1 5s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.convert-head2
+    animation: head3 4s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.convert-line1
+    animation: convertline 6s infinite linear
+    transform-origin: center
+    transform-box: fill-box
+    transform: translate(-284.259px, -153.03px)
+.convert-line2
+    animation: convertline 6s infinite 0.3s linear
+    transform-origin: center
+    transform-box: fill-box
+    transform: translate(-284.259px, -153.03px)
+.convert-line3
+    animation: convertline 6s infinite 0.6s linear
+    transform-origin: center
+    transform-box: fill-box
+    transform: translate(-284.259px, -153.03px)
+.convert-line4
+    animation: convertline 6s infinite 0.9s linear
+    transform-origin: center
+    transform-box: fill-box
+    transform: translate(-284.259px, -153.03px)
+.convert-line5
+    animation: convertline 6s infinite 1.2s linear
+    transform-origin: center
+    transform-box: fill-box
+    transform: translate(-284.259px, -153.03px)
+.call-head1
+    animation: callheadmain 2s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.call-head2
+    animation: callhead 2s infinite linear
+    transform-origin: bottom
+    transform-box: fill-box
+.call-head3
+    animation: callhead 1.5s infinite linear
+    transform-origin: bottom
     transform-box: fill-box

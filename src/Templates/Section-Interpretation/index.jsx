@@ -1,20 +1,23 @@
 import { Work } from "../../Components/svg/Work";
 
-export const Section3 = () => {
+export const Interpretation = () => {
   return (
-    <section id="section3">
-      <h1 className="section3-title">Interpretação</h1>
-      <div className="section3-interpretation">
-        <div className="section3-img">
+    <section id="interpretation">
+      <div className="general-spacing"></div>
+      <h1 className="interpretation-title">
+        Interpretação
+      </h1>
+      <div className="interpretation-box">
+        <div className="interpretation-img">
           <Work />
           <div
             data-aos="zoom-in-up"
             data-aos-delay="300"
-            className="section3-img-bg"
+            className="interpretation-img-bg"
           ></div>
         </div>
-        <div className="section3-text">
-          <div data-aos="fade-up" data-aos-delay="500">
+        <div className="interpretation-text">
+          <div data-aos="fade-up" data-aos-delay="400">
             <h1>Title</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur
@@ -25,7 +28,7 @@ export const Section3 = () => {
               sequi, distinctio incidunt?
             </p>
           </div>
-          <div data-aos="fade-up" data-aos-delay="800">
+          <div data-aos="fade-up" data-aos-delay="400">
             <h1>Title</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur
@@ -36,7 +39,7 @@ export const Section3 = () => {
               sequi, distinctio incidunt?
             </p>
           </div>
-          <div data-aos="fade-up" data-aos-delay="1100">
+          <div data-aos="fade-up" data-aos-delay="400">
             <h1>Title</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur
