@@ -187,19 +187,19 @@ html {
   .menu-mobile-close .menu-mobile-block-2 {
     animation: menuShrink 1s forwards ease-in-out;
   }
-}
-.display-none {
-  display: none;
-}
 
-.opacity-0 {
-  opacity: 0;
-}
+  .display-none {
+    display: none;
+  }
 
-.opacity-1 {
-  opacity: 1;
-}
+  .opacity-0 {
+    opacity: 0;
+  }
 
+  .opacity-1 {
+    opacity: 1;
+  }
+}
 .footer {
   position: relative;
   bottom: 0;

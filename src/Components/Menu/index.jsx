@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Logo } from "../svg/Logo";
 
 export const Menu = () => {
@@ -18,25 +18,40 @@ export const Menu = () => {
       setMobile("menu-mobile-open");
     }
   };
+  useEffect(() => {
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener(
+        "orientationchange",
+        function () {
+          setFade("display-none");
+          setMobile("");
+        },
+        false,
+      );
+    }
+  }, []);
   return (
     <div className="menu">
       <div className="menu-logo">
         <Logo />
       </div>
       <nav className={"menu-links " + fade}>
-        <a href="#home">
+        <a onClick={handleMobileMenu} href="#home">
           <h2>Inicio</h2>
         </a>
-        <a href="#interpretation">
+        <a
+          onClick={handleMobileMenu}
+          href="#interpretation"
+        >
           <h2>Interpretação</h2>
         </a>
-        <a href="#translation">
+        <a onClick={handleMobileMenu} href="#translation">
           <h2>Tradução</h2>
         </a>
-        <a href="#class">
+        <a onClick={handleMobileMenu} href="#class">
           <h2>Aulas</h2>
         </a>
-        <a href="#contact">
+        <a onClick={handleMobileMenu} href="#contact">
           <h2>Contato</h2>
         </a>
       </nav>
