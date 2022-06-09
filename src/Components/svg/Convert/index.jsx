@@ -12,7 +12,7 @@ export function Convert() {
         version="1.1"
         viewBox="0 0 631.483 593.941"
       >
-        <path
+        {/* <path
           fill="#ccc"
           d="M790.353 612.97a26 26 0 1126-26 26.03 26.03 0 01-26 26z"
           transform="translate(-284.259 -153.03)"
@@ -21,7 +21,7 @@ export function Convert() {
           fill="#fff"
           d="M802.353 585.97h-11v-12.5a1 1 0 00-2 0v12.5h-11a1 1 0 100 2h11v12.5a1 1 0 002 0v-12.5h11a1 1 0 000-2z"
           transform="translate(-284.259 -153.03)"
-        ></path>
+        ></path> */}
         <path
           fill="#ffb8b8"
           d="M606.22 581.779L594.788 581.778 589.352 537.682 606.224 537.683 606.22 581.779z"
