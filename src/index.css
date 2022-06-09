@@ -297,7 +297,7 @@ html {
 }
 
 .home-banner-box {
-  width: 50vw;
+  width: 50%;
   min-width: 350px;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.4862745098);
