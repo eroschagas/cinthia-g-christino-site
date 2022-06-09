@@ -4,6 +4,7 @@ import { Logo } from "../svg/Logo";
 export const Menu = () => {
   const [mobile, setMobile] = useState("");
   const [fade, setFade] = useState("display-none");
+  const [title, setTitle] = useState("name-fade");
   const handleMobileMenu = () => {
     if (mobile === "menu-mobile-open") {
       setFade("opacity-0");
@@ -18,6 +19,7 @@ export const Menu = () => {
       setMobile("menu-mobile-open");
     }
   };
+
   useEffect(() => {
     if (window.DeviceOrientationEvent) {
       window.addEventListener(
@@ -30,10 +32,26 @@ export const Menu = () => {
       );
     }
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let scrolled = window.scrollY;
+
+      console.log(scrolled);
+
+      if (scrolled > 200) {
+        setTitle("");
+      } else if (scrolled <= 200) {
+        setTitle("name-fade");
+      }
+    });
+  }, []);
+
   return (
     <div className="menu">
       <div className="menu-logo">
         <Logo />
+        <h1 className={"menu-name " + title}>Cinthia</h1>
       </div>
       <nav className={"menu-links " + fade}>
         <a onClick={handleMobileMenu} href="#home">

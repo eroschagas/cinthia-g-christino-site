@@ -58,8 +58,17 @@
 .menu-logo
     display: flex
     height: 60px
+    width: 100%
     margin: 0 30px
     align-items: center
+.menu-name
+    width: 100%
+    text-align: center
+    white-space: nowrap
+    margin-left: 30px
+    transition: all 0.5s ease-in-out
+.menu-name:after
+    content: " G.\20 Christino"
 .menu-links
     display: flex
     justify-content: flex-end
@@ -90,11 +99,11 @@
     a:hover
         h2:after
             transform: scaleX(1)
-
 .menu-mobile
     display: none
-
-@media (max-width: 800px)
+.name-fade
+    opacity: 0
+@media (max-width: 1150px)
     .menu-links
         flex-direction: column
         position: fixed
@@ -111,10 +120,10 @@
         align-items: center
         justify-content: center
         flex-direction: column
-        position: fixed
+        position: relative
         top: 0
         right: 0
-        margin: 0 10px
+        margin: 0 20px 0 0
         transition: all 0.5s ease-in-out
         z-index: 2
     .menu-click
@@ -133,9 +142,9 @@
         .menu-mobile-block-1
             background: $cw
             z-index: 3
-            margin-right: 25px
-            transform: rotate(-45deg) translateX(8px)
-            transform-origin: top right
+            margin-right: 5px
+            transform: rotate(-45deg) translate(2px, -7px)
+            transform-origin: right
         .menu-mobile-block-2
             animation: menuExpand 0.5s forwards ease-in-out
             position: fixed
@@ -149,9 +158,9 @@
         .menu-mobile-block-3
             background: $cw
             z-index: 3
-            margin-right: 25px
-            transform: rotate(45deg) translateX(8px)
-            transform-origin: bottom right
+            margin-right: 5px
+            transform: rotate(45deg) translate(2px, 7px)
+            transform-origin: right
     .menu-mobile-close
         .menu-mobile-block-2
             animation: menuShrink 1s forwards ease-in-out
@@ -161,6 +170,11 @@
         opacity: 0
     .opacity-1
         opacity: 1
+
+@media (max-width: 600px)
+    .menu-name:after
+        content: ""
+
 @media (max-height: 400px)
     .menu-links
         a

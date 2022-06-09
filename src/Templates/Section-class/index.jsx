@@ -4,17 +4,17 @@ export const Class = () => {
   return (
     <section id="class">
       <div className="general-spacing"></div>
-      <h1 className="class-title">Aulas</h1>
-      <div className="class-box">
-        <div className="class-img">
+      <h1 className="section-title">Aulas de Inglês</h1>
+      <div className="section-box">
+        <div className="section-img">
           <Call />
           <div
             data-aos="zoom-in-up"
             data-aos-delay="300"
-            className="class-img-bg"
+            className="section-img-bg"
           ></div>
         </div>
-        <div className="class-text">
+        <div className="section-text">
           <div data-aos="fade-up" data-aos-delay="400">
             <h1>Title</h1>
             <p>

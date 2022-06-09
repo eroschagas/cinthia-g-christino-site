@@ -13,7 +13,7 @@
 .contact-info
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: self-start
     justify-content: center
     align-self: center
     max-width: 600px
@@ -25,3 +25,62 @@
         margin: 10px
     p
         margin: 10px
+.contact-whatsapp, .contact-instagram, .contact-mail
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    text-decoration: none
+    color: $cb
+    margin: 10px
+    width: 100%
+.whatsapp-logo
+    width: 45px
+    height: 45px
+    background: green
+    padding: 5px
+    border-radius: 10px
+    path
+        fill: $cw
+.instagram-logo
+    width: 45px
+    height: 45px
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)
+    padding: 5px
+    border-radius: 10px
+    path
+        fill: $cw
+.mail-logo
+    width: 45px
+    height: 45px
+    background: $cb
+    padding: 5px
+    border-radius: 10px
+    path, rect
+        stroke: $cw
+        fill: $cb
+.contact-mail-wrapper
+    display: flex
+    align-items: center
+.copy-button
+    width: 48px
+    height: 40px
+    background: transparent
+    padding: 5px
+    border: none
+    background: #ffffff8a
+    border-radius: 10px
+    box-shadow: 2px 2px 2px $cs
+.copy-button:active
+    transform: translateY(1px)
+    box-shadow: 1px 1px 2px $cs
+.copy-button:hover:before
+    content: "copiar"
+    position: absolute
+    transform: translate(-15px, -45px)
+    background: $cs
+    color: $cw
+    padding: 10px
+    border-radius: 5px
+.copy-button:active:hover:before
+    content: "copiado"
+    transform: translate(-17px, -46px)
