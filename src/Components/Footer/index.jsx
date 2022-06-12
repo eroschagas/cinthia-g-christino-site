@@ -1,3 +1,4 @@
+import { useLanguageContext } from "../../Context/Language";
 import {
   SimpleGit,
   SimpleInsta,
@@ -5,9 +6,15 @@ import {
 } from "../svg/SimpleSocial";
 
 export const Footer = () => {
+  const [language] = useLanguageContext();
+
   return (
     <div className="footer">
-      <h5>Página feita por Eros Chagas</h5>
+      {language ? (
+        <h5>Página feita por Eros Chagas</h5>
+      ) : (
+        <h5>Webpage made by Eros Chagas</h5>
+      )}
       <div>
         <a
           href="https://www.instagram.com/eros.chagas"

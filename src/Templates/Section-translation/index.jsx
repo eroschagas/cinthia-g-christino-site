@@ -1,10 +1,20 @@
 import { Convert } from "../../Components/svg/Convert";
+import { useLanguageContext } from "../../Context/Language";
 
 export const Translation = () => {
+  const [language] = useLanguageContext();
+
   return (
     <section id="translation">
       <div className="general-spacing"></div>
-      <h1 className="section-title">Tradução Escrita</h1>
+      {language ? (
+        <h1 className="section-title">Tradução Escrita</h1>
+      ) : (
+        <h1 className="section-title">
+          Written Translation
+        </h1>
+      )}
+
       <div className="section-box">
         <div className="section-img">
           <Convert />
@@ -14,36 +24,58 @@ export const Translation = () => {
             className="section-img-bg"
           ></div>
         </div>
-        <div className="section-text">
-          <div data-aos="fade-up" data-aos-delay="400">
-            <p>
-              Seja um parágrafo, uma página, ou um
-              calhamaço, faço traduções precisas e com
-              linguagem natural em uma grande variedade de
-              temas, seja para português ou para o inglês.
-            </p>
+        {language ? (
+          <div className="section-text">
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>
+                Seja um parágrafo, uma página, ou um
+                calhamaço, faço traduções precisas e com
+                linguagem natural em uma grande variedade de
+                temas, seja para português ou para o inglês.
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>
+                <b>Meus serviços:</b> Tradução de textos
+                literários e jornalísticos, localização de
+                jogos, apps e sites, tradução precisa de
+                documentos e textos técnico-científicos.
+              </p>
+              <p>
+                <b>Línguas:</b> Inglês-Português;
+                Português-Inglês.
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>
+                O tempo de entrega pode variar conforme o
+                tamanho e a complexidade do texto. Entre em
+                contato para tirar dúvidas e solicitar um
+                orçamento.
+              </p>
+            </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <b>Meus serviços:</b> Tradução de textos
-              literários e jornalísticos, localização de
-              jogos, apps e sites, tradução precisa de
-              documentos e textos técnico-científicos.
-            </p>
-            <p>
-              <b>Línguas:</b> Inglês-Português;
-              Português-Inglês.
-            </p>
+        ) : (
+          <div className="section-text">
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ex consectetur porro natus
+                sunt fugiat distinctio dolorem quisquam in,
+                odit voluptatibus fugit nam et impedit
+                adipisci quibusdam debitis atque eveniet
+                maiores!{" "}
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>English </p>
+              <p>English </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>English </p>
+            </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="400">
-            <p>
-              O tempo de entrega pode variar conforme o
-              tamanho e a complexidade do texto. Entre em
-              contato para tirar dúvidas e solicitar um
-              orçamento.
-            </p>
-          </div>
-        </div>
+        )}
       </div>
     </section>
   );

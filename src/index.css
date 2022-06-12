@@ -152,6 +152,41 @@ html {
   opacity: 0;
 }
 
+.language {
+  position: fixed;
+  height: 30px;
+  width: fit-content;
+  background: #006ad1;
+  top: 70px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(59, 59, 59, 0.3568627451);
+}
+
+.br-flag, .us-flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.menu-toggle-icon {
+  height: 30px;
+  width: auto;
+}
+.menu-toggle-icon circle {
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-toggle-icon-active circle {
+  transform: translateX(200px);
+}
+
 @media (max-width: 1150px) {
   .menu-links {
     flex-direction: column;
@@ -237,6 +272,12 @@ html {
   .opacity-1 {
     opacity: 1;
   }
+
+  .language {
+    left: 10px;
+    bottom: 15px;
+    top: auto;
+  }
 }
 @media (max-width: 600px) {
   .menu-name:after {
@@ -263,12 +304,36 @@ html {
   align-items: center;
 }
 .footer div {
-  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.footer div a {
+  height: 40px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .footer h5 {
   color: #fff;
+  font-size: 14px;
+  line-height: 60px;
+  margin: 5px;
 }
 
+@media (max-width: 420px) {
+  .footer div {
+    margin-right: 0;
+  }
+  .footer h5 {
+    color: #fff;
+    font-size: 10px;
+    line-height: 60px;
+    margin: 5px;
+  }
+}
 .simple-insta, .simple-linked, .simple-git {
   width: 20px;
   height: 20px;
@@ -405,6 +470,7 @@ html {
 
 .section-img {
   width: 100%;
+  max-width: 1000px;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -509,15 +575,22 @@ html {
   align-items: center;
 }
 
+.copy-button-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .copy-button {
-  width: 48px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: transparent;
   padding: 5px;
   border: none;
   background: rgba(255, 255, 255, 0.5411764706);
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(59, 59, 59, 0.3568627451);
+  position: relative;
 }
 
 .copy-button:active {
@@ -525,19 +598,27 @@ html {
   box-shadow: 1px 1px 2px rgba(59, 59, 59, 0.3568627451);
 }
 
-.copy-button:hover:before {
-  content: "copiar";
+.copy-button-label {
   position: absolute;
-  transform: translate(-15px, -45px);
-  background: rgba(59, 59, 59, 0.3568627451);
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
+  top: 5px;
+  height: 40px;
+  width: 80px;
+  line-height: 40px;
+  top: -45px;
+  left: -15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+  padding: 0 10px;
+  border-radius: 15px;
+  display: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.copy-button:active:hover:before {
-  content: "copiado";
-  transform: translate(-17px, -46px);
+.copy-button-label-display {
+  display: block;
 }
 
 @keyframes rotate {

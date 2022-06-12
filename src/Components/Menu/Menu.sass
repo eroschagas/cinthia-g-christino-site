@@ -103,6 +103,33 @@
     display: none
 .name-fade
     opacity: 0
+.language
+    position: fixed
+    height: 30px
+    width: fit-content
+    background: $c6
+    top: 70px
+    right: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 10
+    border-radius: 15px 15px 15px 15px
+    cursor: pointer
+    box-shadow: 4px 4px 4px $cs
+.br-flag, .us-flag
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    margin: 5px
+.menu-toggle-icon
+    height: 30px
+    width: auto
+    circle
+        transition: all 0.2s ease-in-out
+.menu-toggle-icon-active
+    circle
+        transform: translateX(200px)
 @media (max-width: 1150px)
     .menu-links
         flex-direction: column
@@ -170,6 +197,10 @@
         opacity: 0
     .opacity-1
         opacity: 1
+    .language
+        left: 10px
+        bottom: 15px
+        top: auto
 
 @media (max-width: 600px)
     .menu-name:after

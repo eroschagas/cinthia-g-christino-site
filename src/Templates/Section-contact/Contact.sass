@@ -55,26 +55,39 @@
 .contact-mail-wrapper
     display: flex
     align-items: center
+.copy-button-wrapper
+    display: flex
+    align-items: center
+    position: relative
 .copy-button
-    width: 48px
-    height: 40px
+    width: 50px
+    height: 50px
     background: transparent
     padding: 5px
     border: none
     background: #ffffff8a
     border-radius: 10px
     box-shadow: 2px 2px 2px $cs
+    position: relative
 .copy-button:active
     transform: translateY(1px)
     box-shadow: 1px 1px 2px $cs
-.copy-button:hover:before
-    content: "copiar"
+.copy-button-label
     position: absolute
-    transform: translate(-15px, -45px)
-    background: $cs
-    color: $cw
-    padding: 10px
-    border-radius: 5px
-.copy-button:active:hover:before
-    content: "copiado"
-    transform: translate(-17px, -46px)
+    top: 05px
+    height: 40px
+    width: 80px
+    line-height: 40px
+    top: -45px
+    left: -15px
+    right: 15px
+    background: #000000cc
+    z-index: 10
+    color: white
+    padding: 0 10px
+    border-radius: 15px
+    display: none
+    margin: 0 auto
+    text-align: center
+.copy-button-label-display
+    display: block
