@@ -10,7 +10,7 @@ export const Interpretation = () => {
       {language ? (
         <h1 className="section-title">Interpretação</h1>
       ) : (
-        <h1 className="section-title">Interpretation</h1>
+        <h1 className="section-title">Interpreting</h1>
       )}
       <div className="section-box">
         <div className="section-img">
@@ -48,21 +48,22 @@ export const Interpretation = () => {
               <p>
                 <b>Meus serviços:</b> Interpretação Remota
                 (reuniões online, workshops virtuais, lives,
-                etc.), Interpretação Presencial (eventos,
-                palestras, reuniões, etc.), Acompanhamento
-                (em bancos, cartórios, consultas médicas,
-                etc.).{" "}
+                ligações, etc.), Interpretação Presencial
+                (eventos, palestras, reuniões, etc.),
+                Acompanhamento Externo (em bancos,
+                cartórios, consultas médicas, etc.).
               </p>
               <p>
-                <b>Línguas:</b> Inglês-Português;
-                Português-Inglês.
+                <b>Línguas:</b> Inglês para Português /
+                Português para Inglês.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
               <p>
                 Cada evento necessita de um preparo
                 diferente.
-                <br />
+              </p>
+              <p>
                 Entre em contato para tirar dúvidas e
                 solicitar um orçamento.
               </p>
@@ -72,25 +73,48 @@ export const Interpretation = () => {
           <div className="section-text">
             <div data-aos="fade-up" data-aos-delay="400">
               <p>
-                Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Repellendus quae quisquam
-                quas sed omnis? Esse, nisi veniam! Itaque
-                commodi, maxime optio officiis suscipit
-                praesentium voluptas vitae quisquam corporis
-                quos sapiente?
+                An Interpreter allows a speaker to be
+                understood by his/her audience even if they
+                speak different languages. There are two
+                main modes:
               </p>
-              <p>english</p>
-              <p>english</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400">
-              <p>english</p>
-              <p>english</p>
+              <p>
+                <b>Simultaneous Interpreting</b> is done
+                during the speaker&apos;s speech, without
+                interruption, translating the message into
+                the listener&apos;s language with a small
+                delay.
+              </p>
+              <p>
+                <b>Consecutive Interpreting</b>, on the
+                other hand, requires pauses for the
+                interpreter to translate the speech,
+                consuming more time than simultaneous
+                interpreting.
+              </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
               <p>
-                english
-                <br />
-                english
+                <b>My services:</b> Remote Interpreting
+                (online meetings, virtual workshops, lives,
+                calls, etc.), In-person Interpreting
+                (events, conferences, meetings, etc.),
+                Escort Interpreting (to banks, notaries,
+                medical appointments, etc.).
+              </p>
+              <p>
+                <b>Languages:</b> English to Portuguese /
+                Portuguese to English.
+              </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <p>
+                Each situation requires individual
+                solutions.
+              </p>
+              <p>
+                Contact me if you have any questions and
+                would like to request my rates.
               </p>
             </div>
           </div>

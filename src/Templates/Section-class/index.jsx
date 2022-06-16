@@ -25,60 +25,67 @@ export const Class = () => {
         {language ? (
           <div className="section-text">
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Totam excepturi maxime,
-                quidem incidunt laborum officia deleniti
-                molestias quos minus voluptate unde dolorum
-                facere. Nam consequatur repellendus quasi
-                sequi, distinctio incidunt?
+                Mais de 50% de todo o conteúdo da internet
+                está em inglês, mas apenas 5% da população
+                mundial é falante nativo.{" "}
+              </p>
+              <p>
+                É inegável que a língua inglesa se tornou
+                essencial para a comunicação com o resto do
+                mundo. Precisamos dela para trabalhar,
+                estudar, assistir nossas séries favoritas
+                sem legenda e rir de mais memes.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Totam excepturi maxime,
-                quidem incidunt laborum officia deleniti
-                molestias quos minus voluptate unde dolorum
-                facere. Nam consequatur repellendus quasi
-                sequi, distinctio incidunt?
+                <b>Meus serviços:</b> Aulas Online
+                personalizadas de acordo com a necessidade
+                do aluno: do mais básico ao avançado (com ou
+                sem livro didático), ou então aulas com foco
+                específico, como viagem, trabalho, e testes
+                de proficiência.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
               <p>
-                Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Totam excepturi maxime,
-                quidem incidunt laborum officia deleniti
-                molestias quos minus voluptate unde dolorum
-                facere. Nam consequatur repellendus quasi
-                sequi, distinctio incidunt?
+                Entre em contato para tirar dúvidas e marcar
+                uma aula experimental gratuita.
               </p>
             </div>
           </div>
         ) : (
           <div className="section-text">
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Reiciendis a recusandae
-                delectus? Accusamus voluptatibus, doloremque
-                necessitatibus quaerat numquam aliquid est
-                adipisci architecto, itaque explicabo
-                aliquam distinctio maiores, cumque molestiae
-                facilis!{" "}
+                More than 50% of all content on the internet
+                is in English, but only 5% of the world
+                population speaks English as first language.{" "}
+              </p>
+              <p>
+                It is undeniable that the English language
+                has become essential to communicate with the
+                rest of the world. We need it to work,
+                study, watch our favorite series without
+                subtitles, and laugh at more memes.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
-              <p>English </p>
+              <p>
+                <b>My services:</b> Online classes
+                customized to the student&apos;s needs: from
+                the most basic to advanced levels (with or
+                without textbooks), or classes for a
+                specific purpose, such as travel, work, and
+                proficiency tests.
+              </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <h1>Title</h1>
-              <p>English </p>
+              <p>
+                Contact me if you have any questions and
+                would like to schedule a free trial class.
+              </p>
             </div>
           </div>
         )}{" "}

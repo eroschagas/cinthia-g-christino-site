@@ -87,7 +87,7 @@ export const Menu = () => {
             {language ? (
               <h2>Interpretação</h2>
             ) : (
-              <h2>Interpretation</h2>
+              <h2>Interpreting</h2>
             )}
           </a>
           <a onClick={handleMobileMenu} href="#translation">

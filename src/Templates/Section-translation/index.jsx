@@ -31,7 +31,8 @@ export const Translation = () => {
                 Seja um parágrafo, uma página, ou um
                 calhamaço, faço traduções precisas e com
                 linguagem natural em uma grande variedade de
-                temas, seja para português ou para o inglês.
+                temas, tanto para o português quanto para o
+                inglês.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
@@ -42,16 +43,18 @@ export const Translation = () => {
                 documentos e textos técnico-científicos.
               </p>
               <p>
-                <b>Línguas:</b> Inglês-Português;
-                Português-Inglês.
+                <b>Línguas:</b> Inglês para Português /
+                Português para Inglês.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
               <p>
                 O tempo de entrega pode variar conforme o
-                tamanho e a complexidade do texto. Entre em
-                contato para tirar dúvidas e solicitar um
-                orçamento.
+                tamanho e a complexidade do texto.
+              </p>
+              <p>
+                Entre em contato para tirar dúvidas e
+                solicitar um orçamento.
               </p>
             </div>
           </div>
@@ -59,20 +62,34 @@ export const Translation = () => {
           <div className="section-text">
             <div data-aos="fade-up" data-aos-delay="400">
               <p>
-                Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Ex consectetur porro natus
-                sunt fugiat distinctio dolorem quisquam in,
-                odit voluptatibus fugit nam et impedit
-                adipisci quibusdam debitis atque eveniet
-                maiores!{" "}
+                Whether it&apos;s a paragraph, a page, or a
+                tome, I can make accurate, fluent
+                translations on a wide variety of topics, be
+                it in Portuguese or English.
               </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <p>English </p>
-              <p>English </p>
+              <p>
+                <b>My services:</b> Translation of literary
+                and journalistic texts, localization of
+                games, apps and websites, accurate
+                translation of documents and scientific
+                texts.
+              </p>
+              <p>
+                <b>Languages:</b> English to Portuguese /
+                Portuguese to English.
+              </p>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <p>English </p>
+              <p>
+                Deadlines may vary according to the size and
+                complexity of the text.
+              </p>
+              <p>
+                Contact me if you have any questions and
+                would like to request my rates.
+              </p>
             </div>
           </div>
         )}
