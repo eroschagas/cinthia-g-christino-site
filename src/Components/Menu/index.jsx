@@ -104,6 +104,10 @@ export const Menu = () => {
             {language ? <h2>Contato</h2> : <h2>Contact</h2>}
           </a>
         </nav>
+        <div
+          onClick={handleMobileMenu}
+          className={"menu-ghost-background " + fade}
+        ></div>
         <div className={"menu-mobile " + mobile}>
           <div
             className="menu-click"
