@@ -451,6 +451,7 @@ html {
 
   .home-banner-box {
     height: 25vw;
+    min-width: 320px;
   }
 
   .home-banner {
