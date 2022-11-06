@@ -42,8 +42,6 @@ export const Menu = () => {
     window.addEventListener("scroll", () => {
       let scrolled = window.scrollY;
 
-      console.log(scrolled);
-
       if (scrolled > 200) {
         setTitle("");
       } else if (scrolled <= 200) {
